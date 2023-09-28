@@ -49,7 +49,7 @@ The C++ code responsible for handling the Copy-on-write operations is borrowed f
 import { cloneSync } from 'refs2-clone';
 import path from 'path';
 
-cloneSync(join(process.cwd(), 'src', 'test.txt'), join(process.cwd(), 'src', 'test2.txt'));
+cloneSync('test.txt', 'test2.txt');
 ```
 
 ### Asynchronous Version
@@ -59,7 +59,7 @@ import { clone } from 'refs2-clone';
 import path from 'path';
 
 async function main() {
-  await clone(join(process.cwd(), 'src', 'test.txt'), join(process.cwd(), 'src', 'test2.txt'));
+  await clone('test.txt', 'test2.txt');
 }
 ```
 
