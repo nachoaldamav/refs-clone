@@ -67,28 +67,24 @@ Here are some benchmarks comparing the performance of the native addon with the 
 
 ```bash
 Benchmark 1: node ./benchmarks/clone.js
-  Time (mean ± σ):      34.9 ms ±   2.0 ms    [User: 2.6 ms, System: 4.1 ms]
-  Range (min … max):    29.3 ms …  41.9 ms    42 runs
+  Time (mean ± σ):      34.3 ms ±   1.1 ms    [User: 1.9 ms, System: 1.5 ms]
+  Range (min … max):    29.4 ms …  36.3 ms    40 runs
 
 Benchmark 2: node ./benchmarks/cloneSync.js
-  Time (mean ± σ):      34.7 ms ±   8.5 ms    [User: 3.2 ms, System: 3.2 ms]
-  Range (min … max):    30.0 ms …  88.9 ms    44 runs
-
-  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs.
+  Time (mean ± σ):      33.2 ms ±   1.5 ms    [User: 2.1 ms, System: 1.4 ms]
+  Range (min … max):    28.9 ms …  38.1 ms    43 runs
 
 Benchmark 3: node ./benchmarks/link.js
-  Time (mean ± σ):      28.5 ms ±   1.2 ms    [User: 8.5 ms, System: 5.8 ms]
-  Range (min … max):    27.2 ms …  35.4 ms    46 runs
-
-  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet system without any interferences from other programs.
+  Time (mean ± σ):      28.2 ms ±   0.5 ms    [User: 3.2 ms, System: 3.2 ms]
+  Range (min … max):    27.3 ms …  29.4 ms    47 runs
 
 Benchmark 4: node ./benchmarks/linkSync.js
-  Time (mean ± σ):      28.3 ms ±   0.6 ms    [User: 8.2 ms, System: 6.8 ms]
-  Range (min … max):    27.3 ms …  31.0 ms    46 runs
+  Time (mean ± σ):      27.9 ms ±   0.7 ms    [User: 4.2 ms, System: 4.5 ms]
+  Range (min … max):    26.9 ms …  29.5 ms    47 runs
 
 Summary
   'node ./benchmarks/linkSync.js' ran
-    1.01 ± 0.05 times faster than 'node ./benchmarks/link.js'
-    1.23 ± 0.30 times faster than 'node ./benchmarks/cloneSync.js'
-    1.23 ± 0.07 times faster than 'node ./benchmarks/clone.js'
+    1.01 ± 0.03 times faster than 'node ./benchmarks/link.js'
+    1.19 ± 0.06 times faster than 'node ./benchmarks/cloneSync.js'
+    1.23 ± 0.05 times faster than 'node ./benchmarks/clone.js'
 ```
