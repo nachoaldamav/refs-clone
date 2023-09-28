@@ -2,6 +2,8 @@
 
 This project serves as a demo to showcase the usage of Copy-on-write (CoW) capabilities within new Windows 11 Development drives. It's built using a combination of C++ for the native operations and Node.js for the JavaScript interface.
 
+> **Note**: I don't have any experience with C++ or Windows development, so this project is probably not the best example of how to do things and is not very well optimized. If you have any suggestions, feel free to open an issue or a pull request.
+
 ## C++ Source Credit
 
 The C++ code responsible for handling the Copy-on-write operations is borrowed from [0xbadfca11/reflink](https://github.com/0xbadfca11/reflink).
