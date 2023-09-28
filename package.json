@@ -1,0 +1,26 @@
+{
+  "name": "refs2-clone",
+  "version": "0.0.1",
+  "description": "Demo package to show how to use COW with Windows 11",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node-gyp configure build",
+    "compile": "tsc",
+    "watch": "tsc -w",
+    "test": "vitest"
+  },
+  "files": [
+    "dist/*",
+    "build/Release/*.node"
+  ],
+  "keywords": [],
+  "author": "Ignacio Aldama Vicente",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.7.1",
+    "node-addon-api": "^7.0.0",
+    "node-gyp": "^9.4.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.5"
+  }
+}
